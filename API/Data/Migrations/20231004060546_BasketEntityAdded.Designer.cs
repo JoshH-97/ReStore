@@ -10,14 +10,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20240327192550_BasketEntityAdded")]
+    [Migration("20231004060546_BasketEntityAdded")]
     partial class BasketEntityAdded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.3");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.0-rc.1.23419.6");
 
             modelBuilder.Entity("API.Entities.Basket", b =>
                 {
@@ -54,7 +54,7 @@ namespace API.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("BasketItems");
+                    b.ToTable("BasketItem");
                 });
 
             modelBuilder.Entity("API.Entities.Product", b =>

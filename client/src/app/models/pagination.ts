@@ -5,7 +5,7 @@ export interface MetaData {
     totalCount: number;
 }
 
-export class PaginatedResponse<T>{
+export class PaginatedResponse<T> {
     items: T;
     metaData: MetaData;
 
