@@ -133,6 +133,9 @@ namespace API.Data.Migrations
                     b.Property<long>("Price")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("PublicId")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("QuantityInStock")
                         .HasColumnType("INTEGER");
 
